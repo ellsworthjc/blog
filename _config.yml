@@ -9,7 +9,7 @@ name: ellsworthjc
 description: Hello there! 👋😃 My name is Connor Ellsworth. My first name is actually Jonathan but that is a long story for another day. And yes...that does kind of make my name “John Connor”, leader of the resistance against Skynet 😆 🤖
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: http://ellsworthjc.github.io/blog/images/Connor_Ellsworth_Square.png
+avatar: /blog/images/Connor_Ellsworth_Square.png
 
 #
 # Flags below are optional
