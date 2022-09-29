@@ -3,32 +3,35 @@
 // VARIABLES
 //
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 // My Colors
-// $light: #f0f4f4;
-// $dark: #121616;
-// $blue: #72cfcf;
-// $red: #ba2525;
-// $lightblue: #d1f0f0;
+$light: #f0f4f4;
+$dark: #121616;
+$blue: #72cfcf;
+$red: #ba2525;
+$lightblue: #d1f0f0;
 
 // Colors
-$blue: #4183C4;
+// $blue: #4183C4;
 
 // Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+// $black: #000;
+// $darkerGray: #222;
+// $darkGray: #333;
+// $gray: #666;
+// $lightGray: #eee;
+// $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$main: 'Lato', serif;
+
+// Transitions
+$duration: 250ms;
 
 // Mobile breakpoints
 @mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
+	@media screen and (max-width: 640px) {
+	@content;
+	}
 }
