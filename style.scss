@@ -72,9 +72,11 @@ p {
 }
 
 a {
-	color: $blue;
+	color: $light;
 	text-decoration: none;
 	cursor: pointer;
+	transition: $duration;
+
 	&:hover, &:active {
 	color: $blue;
 	}
@@ -291,7 +293,62 @@ footer {
 		transition: all $duration;
 	}
 	& a:hover > svg {
-		fill: $lightblue;
+		fill: $blue;
 		transform: translateY(-0.25em) rotate(5deg);
+	}
+}
+
+/******************/
+/* CUSTOMIZATIONS */
+/******************/
+
+.slide-link {
+	position: relative;
+	color: $light;
+	text-decoration: none;
+	cursor: pointer;
+	padding-bottom: 0.5em;
+	box-sizing: border-box;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	transition: $duration;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 1.25em;
+		width: 33%;
+		border: 0.1em solid $blue;
+		border-radius: 2em;
+		transform-origin: left;
+		transition: all 500ms;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 1.25em;
+		width: 0%;
+		transform: scaleX(1) translateX(110%);
+		border: 0.1em solid $blue;
+		border-radius: 2em;
+		transform-origin: right;
+		transition: all 500ms;
+	}
+
+	&:hover, &:active {
+	color: $blue;
+	}
+	
+	&:hover::before,
+	&:active::before {
+		width: 5%;
+	}
+
+	&:hover::after,
+	&:active::after {
+		transform: scaleX(1);
+		width: 80%;
 	}
 }
