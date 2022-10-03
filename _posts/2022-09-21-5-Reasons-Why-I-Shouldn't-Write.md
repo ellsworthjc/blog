@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 5 Reasons Why I Shouldn't Write
+excerpt: I am none of the following...
 ---
 
 I am none of the following:
